@@ -29,7 +29,7 @@ for i in range(10):
 second = '([' + second + ']{4})'
 
 # 패턴 생성
-pattern = '^' + first + '-?' + second + '-?' + second + '$'
+pattern = '^' + first + '([-|ㅡ])?' + second + '([-|ㅡ])?' + second + '$'
 
 p = re.compile(pattern)
 
